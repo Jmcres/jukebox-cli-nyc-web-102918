@@ -29,7 +29,7 @@ def list(songs)
   user_request = gets.chomp
   songs.each_with_index do |song, i|
     if user_request.to_i == i
-    puts "playing #{songs[i-1]}"
+    puts "Playing #{songs[i-1]}"
   elsif user_request == song 
   puts "playing #{song[i]}"
 else puts "Invalid input, please try again"
