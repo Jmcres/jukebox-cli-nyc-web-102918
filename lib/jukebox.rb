@@ -30,6 +30,7 @@ def list(songs)
   songs.each_with_index do |song, idx|
     if input.to_i == (idx+1) || input == song
       puts "Playing #{song}"
-      
+    else
+      puts 
 
   
