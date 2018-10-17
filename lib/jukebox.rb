@@ -25,10 +25,14 @@ def list(songs)
   
   
   def play(songs)
-   i = 1
-   my_songs.each_key do |song|
-    puts "#{i}. #{song}"
-    i += 1
-  end
-end
+     puts "Please enter a song name or number"
+  input = gets.chomp
+  songs.each_with_index do |song, idx|
+    if input.to_i == (idx+1) || input == song
+      puts "Playing #{song}"
+      break
+    else
+      puts "Invalid input, please try again"
+      break
+    end 
   
