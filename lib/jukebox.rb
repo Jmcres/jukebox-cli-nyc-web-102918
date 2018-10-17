@@ -31,4 +31,9 @@ def list(songs)
     if input.to_i == (index + 1) || input == item 
       puts "Playing #{item}"
       break
-      
+          else
+      puts "Invalid input, please try again"
+      break
+    end 
+  end
+end
