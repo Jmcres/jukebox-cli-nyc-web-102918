@@ -27,3 +27,4 @@ def list(songs)
   def play(songs)
     puts  "Please enter a song name or number"
     input = gets.chomp
+    songs.each_with_index { |item, index|
