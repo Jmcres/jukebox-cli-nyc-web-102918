@@ -34,5 +34,7 @@ def list(songs)
     else
       puts "Invalid input, please try again"
       break
-    end 
+    end
+  end
+end
   
