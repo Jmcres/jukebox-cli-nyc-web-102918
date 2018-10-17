@@ -29,4 +29,4 @@ def list(songs)
     input = gets.chomp
     songs.each_with_index { |item, index|
     if input.to_i == (index + 1) || input == item 
-      
+      puts "Playing #{item}"
