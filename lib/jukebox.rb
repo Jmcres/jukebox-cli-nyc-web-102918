@@ -30,3 +30,5 @@ def list(songs)
     songs.each_with_index { |item, index|
     if input.to_i == (index + 1) || input == item 
       puts "Playing #{item}"
+      break
+      
