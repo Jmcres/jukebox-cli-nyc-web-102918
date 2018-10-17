@@ -31,6 +31,9 @@ def list(songs)
     if input.to_i == (idx+1) || input == song
       puts "Playing #{song}"
     else
-      puts 
+      puts "Invalid input, please try again"
+    end
+  end
+end
 
   
